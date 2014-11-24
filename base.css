@@ -13,7 +13,7 @@ body{
 }
 
 header {
-    padding: 10px;
+    margin: 10px;
     background-color: #333;
 }
 
@@ -22,3 +22,16 @@ header > h2 {
     font-style: italic;
 }
 
+main {
+    float: left;
+    width: 70%;
+    background-color: #333;
+    margin: 10px;
+}
+
+aside {
+    float: left;
+    width: 30%;
+    background-color: #333;
+    margin: 10px;
+}
