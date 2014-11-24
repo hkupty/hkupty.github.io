@@ -13,6 +13,7 @@ body{
 }
 
 header {
+    padding: 10px;
     margin: 10px;
     background-color: #333;
 }
@@ -26,6 +27,7 @@ main {
     float: left;
     width: 70%;
     background-color: #333;
+    padding: 10px;
     margin: 10px;
 }
 
@@ -33,5 +35,6 @@ aside {
     float: left;
     width: 30%;
     background-color: #333;
+    padding: 10px;
     margin: 10px;
 }
