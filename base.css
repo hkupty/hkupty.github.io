@@ -12,6 +12,12 @@ header {
     padding: 10px;
 }
 
+header,
+header > h1,
+header > h2 {
+    background-color: #333;
+}
+
 header > h2 {
     font-size: 12pt;
     font-style: italic;
