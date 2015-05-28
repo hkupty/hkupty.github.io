@@ -8,33 +8,60 @@
     color: #eae7e4;
 }
 
-body{
-    background-color: #333;
-}
+body{ background-color: #333; }
 
 header {
     padding: 10px;
     margin: 10px;
-    background-color: #313a41;
+    background-color: #222;
 }
 
-header > h2 {
+h2 {
     font-size: 12pt;
     font-style: italic;
 }
 
 main {
     float: left;
-    width: 65%;
-    background-color: #313a41;
+    width: 60%;
+    background-color: #222;
     padding: 10px;
     margin: 10px;
 }
 
+main > section { padding-bottom: 20px; }
+
+ul {
+    padding-left: 10px;
+    list-style-type: none;
+}
+
+li:before{ content: "├" }
+
+li:first-child:before{ content: "┌" }
+
+li:last-child:before{ content: "└" }
+
 aside {
     float: left;
-    width: 30%;
-    background-color: #313a41;
+    width: 34%;
+    background-color: #222;
     padding: 10px;
     margin: 10px;
 }
+
+footer {
+    clear: both;
+    background-color: #222;
+    padding: 10px;
+    margin: 10px;
+} 
+
+.flexbox {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  overflow: hidden;
+}
+
+.flexbox .col { flex: 1; }
