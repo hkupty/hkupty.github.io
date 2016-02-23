@@ -1,6 +1,6 @@
 # Site settings
-title: Jekyll-Uno
-description: 'Henry Kupty personal website'
+title: Henry Kupty
+description: 'Den of Hkupty'
 url: 'http://hkupty.github.io'
 baseurl: '/'
 # google_analytics: 'UA-XXXXXX-X'
