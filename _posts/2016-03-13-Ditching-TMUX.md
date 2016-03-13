@@ -12,12 +12,14 @@ With that said, I found that my workflow was not optimal, a certain day, where I
 
 I case you don't know [neovim][neovim] yet, it is an awesome fork of vim with several enhancements, such as built-in terminal emulator and asynchronous jobs.
 
-##Defeating Muscle Memory
+Defeating Muscle Memory
+-----------------------
 Well, some times you get way too much used to some keymaps. This is the case. I use `<C-b>` for everything. Even on plain terminal, I use `<C-b>l` (custom bind) for clearing the screen.
 
 So my first step to remove tmux out of my way was to bind several of the keybinds I'm used to in neovim. And I came up with [nvimux][nvimux]. This is just a fancy name for 'tmux bindings on neovim'. It is very simple and has almost no fancy stuff, such as configurable keybinds, conditional mappings and so on. It just enables tmux bindings if tmux is off. Feel free to use if you get interested.
 
-##Overcoming the limitations
+Overcoming the limitations
+--------------------------
 Now that I can `<C-b>c` instead of `:tabe` and `<C-b>1` instead of `1gt` (which I normally use, but I used to navigate tmux's panes way more often), its time to handle the limitations.
 
 The first thing is the shell. While on tmux, I normally typed `vim path/to/some/file` to edit it. This was fine inside tmux but from within neovim's terminal, this would cause a nested vim session, which is not what I wanted.
@@ -36,7 +38,8 @@ Now, from inside neovim I can type `t path/to/some/file` to open it on another t
 
 Another plugin that helped my deeply was [neoterm][neoterm]. I mapped `<C-b>q` to be my quick terminal and I can open the same instance on every screen. It just wraps neovim terminal in an easy and reusable way.
 
-##//TODO
+//TODO
+------
 I'm still adjusting all the stuff, so there are several things I miss or need to improve my usage.
 
   * Tab-local pwd. As of writing this arcticle, the feature is still [a pending PR on neovim][neovim-pr].
