@@ -2,7 +2,7 @@
 title: "Ditching tmux"
 date: 2016-03-13 10:55
 categories: [tools]
-tags: [neovim tmux]
+tags: [neovim, tmux]
 ---
 This week I started an experiment. I wanted to know whether I would be able to completely ditch tmux.
 
