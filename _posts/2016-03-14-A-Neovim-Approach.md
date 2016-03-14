@@ -22,7 +22,7 @@ Several people stated that tmux does attach/detach and remote/ssh session. Well,
 I started to think about taking tmux out of my stack recently because:
 
   * It made more complex to manage clipboard (specially on mac, which I use at work);
-  * `<C-b>n`, `<C-b>p`, `gt`, `gT` and variations started to become on the way if I had several tabs and several panes open;
+  * `<C-b>n`, `<C-b>p`, `gt`, `gT` and variations started to come on the way if I had several tabs and several panes open;
     * Specially confusing if multitasking;
     * Had to swtich over several times to check compilation/tests;
   * Another dotfile to manage, another config to tweak, another app to provision in order to start working.
