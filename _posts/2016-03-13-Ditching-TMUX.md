@@ -22,7 +22,7 @@ Overcoming the limitations
 --------------------------
 Now that I can `<C-b>c` instead of `:tabe` and `<C-b>1` instead of `1gt` (which I normally use, but I used to navigate tmux's panes way more often), its time to handle the limitations.
 
-The first thing is the shell. While on tmux, I normally typed `vim path/to/some/file` to edit it. This was fine inside tmux but from within neovim's terminal, this would cause a nested vim session, which is not what I wanted.
+The first thing is editing files from the shell. While on tmux, I normally typed `vim path/to/some/file` to edit it. This was fine inside tmux but from within neovim's terminal, this would cause a nested vim session, which is not what I wanted.
 
 So I found an excellent tool called [neovim-remote][nvr]. It is fantastic. I have written a small wrapper around it on my `.zshrc`, but just for faster typing:
 
@@ -36,7 +36,7 @@ fi
 
 Now, from inside neovim I can type `t path/to/some/file` to open it on another tab or replace `t` with `h` to open horizontally (or `v` for vertically) on the same tab I'm now.
 
-Another plugin that helped my deeply was [neoterm][neoterm]. I mapped `<C-b>q` to be my quick terminal and I can open the same instance on every screen. It just wraps neovim terminal in an easy and reusable way.
+Another plugin that helped me deeply was [neoterm][neoterm]. I mapped `<C-b>q` to be my quick terminal and I can open the same instance on every screen. It just wraps neovim terminal in an easy and reusable way.
 
 //TODO
 ------
