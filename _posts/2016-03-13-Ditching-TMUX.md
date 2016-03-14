@@ -48,6 +48,8 @@ I'm still adjusting all the stuff, so there are several things I miss or need to
 
 Other than that, I has been a quite interesting week and I feel I'm making a better usage of other tools such as `vim-fugitive` instead of `git` directly on command line. As for productivity I think it is still too early to say.
 
+__Edit:__ As this post has made some discussion happen on [hackernews][hn], I've added some more information about it on [this post][next-post]
+
 :x
 
 [keymaps]:      https://github.com/hkupty/dotfiles/blob/master/tmux/.tmux.conf
@@ -57,3 +59,5 @@ Other than that, I has been a quite interesting week and I feel I'm making a bet
 [nvr]:          https://github.com/mhinz/neovim-remote
 [neoterm]:      https://github.com/kassio/neoterm
 [neovim-pr]:    https://github.com/neovim/neovim/pull/3229
+[hn]:           https://news.ycombinator.com/item?id=11283955
+[next-post]:    http://hkupty.github.io/2016/A-Neovim-Approach/
