@@ -14,7 +14,7 @@ I case you don't know [neovim][neovim] yet, it is an awesome fork of vim with se
 
 Defeating Muscle Memory
 -----------------------
-Well, some times you get way too much used to some keymaps. This is the case. I use `<C-b>` for everything. Even on plain terminal, I use `<C-b>l` (custom bind) for clearing the screen.
+Well, some times you get way too much used to some keymaps. This is the case. I use `<C-b>` for everything. Even on plain terminal, I use `<C-b><C-l>` (custom bind) for clearing the screen.
 
 So my first step to remove tmux out of my way was to bind several of the keybinds I'm used to in neovim. And I came up with [nvimux][nvimux]. This is just a fancy name for 'tmux bindings on neovim'. It is very simple and has almost no fancy stuff, such as configurable keybinds, conditional mappings and so on. It just enables tmux bindings if tmux is off. Feel free to use if you get interested.
 
