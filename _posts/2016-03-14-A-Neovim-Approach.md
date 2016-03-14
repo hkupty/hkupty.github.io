@@ -20,6 +20,7 @@ Why ditch tmux?
 Several people stated that tmux does attach/detach and remote/ssh session. Well, I don't normally ssh into servers, but still, should be no problem to open a tmux or even a screen session from within neovim's terminal. As for attach/detach, `<C-z>` and `fg` suffice for me.
 
 I started to think about taking tmux out of my stack recently because:
+
   * It made more complex to manage clipboard (specially on mac, which I use at work);
   * `<C-b>n`, `<C-b>p`, `gt`, `gT` and variations started to become on the way if I had several tabs and several panes open;
     * Specially confusing if multitasking;
