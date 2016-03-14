@@ -10,7 +10,7 @@ Don't get me wrong here, I absolutely love how tmux makes terminal multiplexing 
 
 With that said, I found that my workflow was not optimal, a certain day, where I was constantly switching tabs on neovim and panes on tmux. This was unlikely the best scenario and I challenged me to overcome this by runnig neovim _as my terminal multiplexer_.
 
-I case you don't know [neovim][neovim] yet, it is an awesome fork of vim with several enhancements, such as built-in terminal emulator and asynchronous jobs.
+In case you don't know [neovim][neovim] yet, it is an awesome fork of vim with several enhancements, such as built-in terminal emulator and asynchronous jobs.
 
 Defeating Muscle Memory
 -----------------------
