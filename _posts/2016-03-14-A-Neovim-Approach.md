@@ -38,7 +38,7 @@ I can have [remote plugins][remote-plugins] interacting asynchronously with neov
 I don't need to have several tmux panes opened at the same time _to have the same (or even better) productivity now with neovim._ And that is what this is all about: Productivity.
 Taking everything that reduces your productivity is a recycling process that you should do often. If you are getting off the track, the sooner you realise it and the sooner you fix it, the better.
 
-I probably have read it somewhere, but it is very clear to me that we should be very familiar with the tools we use daily. Neither the editor nor any other tool (shell, terminal multiplexer, terminal application/gui) should be unfamiliar to the point it hurts your ability to code (or whatever else you must do).
+I probably have read it somewhere, but it is very clear to me that we should be very familiar with the tools we use daily. Neither the editor nor any other tool (shell, terminal multiplexer, terminal application/gui) should be unfamiliar or burdensome to the point it hurts your ability to code (or whatever else you must do).
 
 The thing is, _neovim has maked unnecessary the use of a terminal multiplexer for my development workflow_ and it surely might do that to others.
 
