@@ -36,7 +36,7 @@ I can have [terminal buffers][terminal-buffers] within neovim, so I don't need t
 I can have [remote plugins][remote-plugins] interacting asynchronously with neovim, so the editor does not freeze.
 
 I don't need to have several tmux panes opened at the same time _to have the same (or even better) productivity now with neovim._ And that is what this is all about: Productivity.
-Taking everything that reduces your productivity is a recycling process that you should do often. If you are getting off the track, the sooner you realise it and the soyour you fixe it, the better.
+Taking everything that reduces your productivity is a recycling process that you should do often. If you are getting off the track, the sooner you realise it and the sooner you fix it, the better.
 
 I probably have read it somewhere, but it is very clear to me that we should be very familiar with the tools we use daily. Neither the editor nor any other tool (shell, terminal multiplexer, terminal application/gui) should be unfamiliar to the point it hurts your ability to code (or whatever else you must do).
 
