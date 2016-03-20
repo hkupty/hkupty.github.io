@@ -64,7 +64,7 @@ In a java code, you'd check for `null` before doing anything to avoid a NPE:
 ```java
 String myPossibleString = someComputation();
 if(myPossibleString == null) {
-  \\ Short circuit out
+  //Short circuit out
 }
 return myPossibleString.toUpper();
 ```
@@ -80,11 +80,11 @@ The only difference here is that the java code will return a `String`, while the
 By mapping a monad, we transform the cointained value while keeping the same container. The result of this can be either:
 
 ```scala
-Some("MYUPPERSTRING") \\ if the computation was successful
+Some("MYUPPERSTRING") // if the computation was successful
 
-\\ or
+// or
 
-None \\ if the computation was unsuccessful
+None // if the computation was unsuccessful
 ```
 
 Note that `_.toUpper` won't break if `None` was supplied. This allows chaining operations on a value without having to short circuit all the possible problems:
