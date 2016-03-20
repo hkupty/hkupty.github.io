@@ -1,5 +1,5 @@
 ---
-title: "Functional Programming: Code, Idioms and Philosophy"
+title: "Functional Programming: Concepts, Idioms and Philosophy"
 date: 2016-03-19 10:06
 categories: [code]
 tags: [functional programming, python, scala, java]
@@ -190,7 +190,7 @@ def process_all_values(lst):
 
 def do_process():
   id_list = fetch_values()
-  evens, odds = filter_values(id_list)
+  evens, odds = partition_values(id_list)
   p_evens, p_odds = process_all_values(even), process_all_values(odds)
 
   # Python `map` is lazy, so we force evaluation
