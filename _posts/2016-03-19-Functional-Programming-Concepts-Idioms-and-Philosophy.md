@@ -32,7 +32,7 @@ Functions have a special meaning on those languages, such that they are __first 
 
 ### Immutable Values
 
-Stateful systems are very difficult to parallelize, having to implement mutexes, locks semaphores and other forms of __access constraints__ to make the code safer. FP simply bashes the concept of mutability; instead, when coding in a functional language, you compose functions to obtain the values you need.
+Stateful systems are very difficult to parallelize, having to implement mutexes, locks, semaphores and other forms of __access constraints__ to make the code safer. FP simply bashes the concept of mutability; instead, when coding in a functional language, you compose functions to obtain the values you need.
 
 This is one of the concepts that are most difficult to picture, coming from a non-functional language. The good thing about it is that immutability forces you to rethink your problems in order to have a (functionally) correct solution for the problem. This should not be a problem once you understand that Functional Programming is much more __about how you design your functions than about how you design your data__.
 
@@ -117,11 +117,11 @@ I could spend several hours here writing about how monads allow you to express y
 
 ### Algebraic Data What?
 
-There is a complete mathematical theory backing this kind of data, but I'll humbly limit myself to explaining that algebraic data types are meaningful, composite types. An algebraic data type defined _by the sum of all definitions of its forms_. Some monads are defined as algebraic data types, such as scala `Options`, we've seen before. It can be either `Some` or `None`. Each of those have different behaviors when mapped, filtered and reduced.
+There is a complete mathematical theory backing this kind of data, but I'll humbly limit myself to explaining that algebraic data types are meaningful, composite types. An algebraic data type defined _by the sum of all definitions of its forms_. Some monads are defined as algebraic data types, such as scala `Options` we've seen before. It can be either `Some` or `None`. Each of those have different behaviors when mapped, filtered and reduced.
 
-This means that while monads provide laws to data containers, algebraic data types provide __form__ and __meaning__. `Try` and `Option` are both quite similar in terms of API and can behave quite similarly, but what differs both is that you'll want to use `Try` when the error can be meaningful or several kinds of errors can be thrown, each requiring different actions. You can also use `Either`, if you must deal with two possible outcomes for a function. The range of monadic algebraic types are immense and they help you to structure your application without heavy, imperative concepts.
+This means that while monads provide laws to data containers, algebraic data types provide __form__ and __meaning__. `Try` and `Option` are both quite similar in terms of API and can behave quite similarly, but what differs both is that you'll want to use `Try` when the error can be meaningful or several kinds of errors can be thrown, each requiring different actions. You can also use `Either`, if you must deal with two possible outcomes for a function. The range of monadic algebraic types is immense and they help you to structure your application without heavy, imperative concepts.
 
-In general, using this kind of abstractions lead to a cleaner, meaningful code. Personally, I consider this kind of abstraction to be much higher and more valuable than Object Oriented programming. Of course OO has its value, but its much easier to express logic with this abstractions.
+In general, using this kind of abstractions lead to a cleaner, meaningful code. Personally, I consider this kind of abstraction to be much higher and more valuable than Object Oriented programming. Of course OO has its value, but its much easier to express logic algebraic data structures.
 
 But how can I start using it?
 -----------------------------
