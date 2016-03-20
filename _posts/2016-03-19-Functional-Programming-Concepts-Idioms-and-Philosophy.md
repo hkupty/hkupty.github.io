@@ -22,7 +22,7 @@ This, on the other hand, can have several meanings and have to be carefully anal
 As a general rule, think of your code as if you were writing a mathematical function:
 
   * Should its result vary according to anything that isn't supplied as a parameter? No
-  * Should it alter any of the parameters that where supplied? No
+  * Should it alter any of the parameters that were supplied? No
   * Should it alter anything outside it's scope? No
   * Should the result be always the same for the same supplied parameters? __Yes.__
 
