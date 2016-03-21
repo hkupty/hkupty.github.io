@@ -10,6 +10,8 @@ tags: [functional programming, python, scala, java]
 I'll deconstruct the functional paradigm by first defining what 'Functional Programming' really means, then explaining common idioms and comparing the syntax.
 In the end, I'll show how to make relevant changes to non-functional in order to follow the Functional Programming Philosophy.
 
+Please note that this post is mostly intended to those who never programmed functionally before and the goal here is to present Functional Programming as a practice not strict to language features, but as a philosophy that can, to some extent, be followed in any languages, enhancing code safety and bringing some of the advantages of FP to non-functional languages.
+
 Defining 'Functional Programming'
 ---------------------------------
 
@@ -41,13 +43,13 @@ Values, after all, a logical abstraction of your data, while functions are a log
 Some Idioms not Quite Familiar
 ------------------------------
 
-Coming from OO to FP might be complicated if you have never seen a FP source code and how it looks like. You'll probably not be seeing the `for` and `if` commands you are used to, but instead, `map`, `reduce`, `filter` and `flatten`. You'll learn of the (not so complicated) [Monads][monad] and [Algebraic Data Types][algebraic-scala]. What is all that supposed to mean and why can't the old structures be used?
+Coming from OO to FP might be complicated if you have never seen a FP source code and how it looks like. You'll probably not be seeing the `for` and `if` commands you are used to, but instead, `map`, `reduce`, `filter` and `flatten`. You'll learn of the (not so complicated) [Monads][monad], Functors and [Algebraic Data Types][algebraic-scala]. What is all that supposed to mean and why can't the old structures be used?
 
 I'll be using the [scala][scala] names for the idioms presented here, but they are all the same in functional languages.
 
-### Learn You a Monad For a Greater Good
+### Monads, Functors and Friends
 
-Monads are [amazingly simple][simple-monad] with amazingly complicated rules. Monads are containers. Period. There are rules that regulate how Monads work and interact with other Monads, but you may leave that to later (but don't forget about it, ok?).
+Monads are [amazingly simple][simple-monad] with amazingly complicated rules. Monads are containers. Period. There are rules that regulate how Monads work and interact with other Monads and this rules also define terms such as Functors, Monoids, Applicative Functors and other extraneous terms to those who never programmed in functional languages. For the sake of simplicity, I'll group them here as simply 'Monad', taking the risk of being semantically wrong to make you understand the concept. I promise I'll disambiguate this later, ok?
 
 Let me show you some scala code to illustrate what this means:
 
@@ -207,9 +209,12 @@ Some other concepts help you deal with this kind of problem and are orthogonal t
 Conclusion
 ----------
 
+You'll find that code that follows the functional philosophy is easier to test, to parallelize, to reuse and to understand. This, of course, doesn't mean that FP is the silver bullet that will solve all programming problems. If that was the case, I wouldn't be advertising the usage of those practices on non-functional languages, but rather advocating the migration to FP languages. The true value here is that you have an alternative to traditional imperative code style, which can result in the aforementioned advantages
+
 This post got longer than I initially though and is only scratching the surface of FP. I'll surely write more about FP on future posts and I'll always focus more on the philosophy and how can you think functionally, even if your current language doesn't fully implement functional idioms. There are tons of useful techniques that one can borrow from functional programming which makes code safer, cleaner and more expressive.
 
 Feel free to write me if you agree, disagree or just want to have a beer with me. I still don't have comments on my blog and this is something I'll take care of on the next week.
+:x
 
 
 [fp]: https://en.wikipedia.org/wiki/Functional_programming
