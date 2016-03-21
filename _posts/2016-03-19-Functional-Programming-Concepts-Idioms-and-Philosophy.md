@@ -25,7 +25,7 @@ As a general rule, think of your code as if you were writing a mathematical func
 
   * Should its result vary according to anything that isn't supplied as a parameter? No
   * Should it alter any of the parameters that were supplied? No
-  * Should it alter anything outside it's scope? No
+  * Should it alter anything outside its scope? No
   * Should the result be always the same for the same supplied parameters? __Yes.__
 
 If, as you read this, you remembered a code that doesn't conform, I'm afraid it wasn't functional. Why?
