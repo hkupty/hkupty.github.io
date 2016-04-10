@@ -193,7 +193,7 @@ def process_all_values(lst):
 def do_process():
   id_list = fetch_values()
   evens, odds = partition_values(id_list)
-  p_evens, p_odds = process_all_values(even), process_all_values(odds)
+  p_evens, p_odds = process_all_values(evens), process_all_values(odds)
 
   # Python `map` is lazy, so we force evaluation
   list(p_even)
