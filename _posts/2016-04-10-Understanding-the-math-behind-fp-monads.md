@@ -38,6 +38,7 @@ While the type constructor and the return function seem pretty obvious, the bind
 It is a function that takes a Monad of `a` and a function that takes `a` and returns a Monad of `b` to return a Monad of `b`.
 
 This can be written in code as follows:
+
 ```scala
 val m: List[Int] = List(12, 34)
 // m is our Monad, bein List a monadic type
@@ -56,6 +57,7 @@ With this explained, lets move on to the laws:
 
 This law states that `(return a) bind f == f a` or `Create a monad with 'a' and bind it with 'f' is the same as calling 'f(a)'`.
 We can prove this law in:
+
 ```scala
 def toListString: Int => List[String] = i => List(i.toString)
 
@@ -69,6 +71,7 @@ leftProperty == rightProperty
 
 This law states that `m bind return == m` or `Binding return on a monad returns the same monad`.
 We can prove this law in:
+
 ```scala
 val monad = List(1)
 
@@ -82,6 +85,7 @@ boundValue == monad
 This law states that `m bind f bind g == m bind (i -> f(i) bind g)` or `Binding f to a monad and then binding g is the same as binding a function that produces a monad using f bidning g to the result to the same monad`.
 
 It might sound a bit complicated, but we can prove this law in:
+
 ```scala
 def double(i: Int): List[Int] = List(i * 2)
 def triple(i: Int): List[Int] = List(i * 3)
