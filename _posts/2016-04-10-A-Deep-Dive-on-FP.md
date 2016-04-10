@@ -37,7 +37,7 @@ Before explaining the laws, I'll also define the set of operations a type must h
 While the type constructor and the return function seem pretty obvious, the bind function (called `flatMap` on the scala dialect) needs a bit of explanation:
 It is a function that takes a Monad of `a` and a function that takes `a` and returns a Monad of `b` to return a Monad of `b`.
 
-This can be written in code as follows:
+This can be written in code as the following:
 
 ```scala
 val m: List[Int] = List(12, 34)
