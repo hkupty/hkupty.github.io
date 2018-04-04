@@ -37,4 +37,4 @@ kramdown:
 exclude: ['Gemfile']
 
 remote_theme: "mmistakes/minimal-mistakes"
-minimal_mistakes_skin: "neon"
+minimal_mistakes_skin: "dark"
