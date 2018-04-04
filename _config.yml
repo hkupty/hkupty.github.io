@@ -34,4 +34,6 @@ kramdown:
   # do not replace newlines by <br>s
   hard_wrap: false
 
-remote_theme: joshgerdes/jekyll-uno
+exclude: ['README.md', 'Gemfile', 'Gemfile.lock', 'screenshot.png']
+
+remote_theme: minimal-mistakes-jekyll
