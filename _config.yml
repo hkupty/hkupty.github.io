@@ -1,10 +1,15 @@
 # Site settings
-title: Henry Kupty
-description: 'Den of Hkupty'
-url: 'http://hkupty.github.io'
+title: 'A monomorphic mapping of Ideas -> Text'
+name: 'Henry Kupty'
+description: 'Whatever comes to mind transformed into text, whenever I can write.'
+url: 'https://hkupty.github.io'
 baseurl: '/'
-google_analytics: 'UA-74370609-1'
+repository: 'hkupty/hkupty.github.io'
 # disqus_shortname: 'your-disqus-name'
+
+analytics:
+  google:
+    tracking_id: 'UA-74370609-1'
 
 category_archive:
   type: liquid
@@ -16,29 +21,43 @@ tag_archive:
 author:
   name: 'hkupty'
   email: hkupty@gmail.com
-  linkedin_username:  hkupty
+  bio: 'Self-taught engineer'
+  linkedin: hkupty
+  bitbucket: hkupty
+  github: hkupty
+  gitlab: ingvij
+  stackoverflow: ingvij
+  twitter: ingvijk
 
+read_time: true
 
-github:
-  username:  hkupty
-
-twitter:
-  username: ingvijk
+social:
+  links:
+    - "https://twitter.com/ingvijk"
+    - "https://www.linkedin.com/in/hkupty"
+    - "https://github.com/hkupty"
 
 defaults:
-  -
-    scope:
-      path: ''
-      type: 'posts'
+  - scope:
+      path: ""
+      type: posts
     values:
-        layout: 'single'
+      layout: single
+      author_profile: true
+      read_time: true
+      comments: false
+      share: true
+      related: true
 
 # Build settings
 destination: _site
 paginate: 10
+paginate_path: /recent/page:num/
 permalink: /:year/:title/
 markdown: kramdown
 highlighter: rouge
+breadcrumbs: true
+read_time: true
 
 kramdown:
   # use Github Flavored Markdown
