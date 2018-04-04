@@ -36,4 +36,4 @@ kramdown:
 
 exclude: ['README.md', 'Gemfile', 'Gemfile.lock', 'screenshot.png']
 
-remote_theme: minimal-mistakes-jekyll
+remote_theme: "mmistakes/minimal-mistakes"
