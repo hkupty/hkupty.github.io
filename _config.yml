@@ -19,7 +19,7 @@ defaults:
       path: ''
       type: 'posts'
     values:
-        layout: 'post'
+        layout: 'single'
 
 # Build settings
 destination: _site
@@ -34,6 +34,6 @@ kramdown:
   # do not replace newlines by <br>s
   hard_wrap: false
 
-exclude: ['README.md', 'Gemfile', 'Gemfile.lock', 'screenshot.png']
+exclude: ['Gemfile']
 
 remote_theme: "mmistakes/minimal-mistakes"
