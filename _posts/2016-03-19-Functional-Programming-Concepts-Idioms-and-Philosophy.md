@@ -3,6 +3,7 @@ title: "Functional Programming: Concepts, Idioms and Philosophy"
 date: 2016-03-19 10:06
 categories: [code]
 tags: [functional programming, python, scala, java]
+layout: single
 ---
 
 [Functional Programming][fp] has risen as a solution to most modern days problems, such as concurrency and scaling. For some, it is a mystique concept that applies only to Erlang, Haskell and other strange languages that are either too complicated or irrelevant. This is simply not true, and I'm going to show how to apply some functional programming concepts on non-functional languages.

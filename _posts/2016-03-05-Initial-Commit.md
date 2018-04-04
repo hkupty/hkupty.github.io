@@ -3,6 +3,7 @@ title: "Initial Commit"
 date: 2016-03-05 09:50
 categories: [blog]
 tags: [blog]
+layout: single
 ---
 Hi all, I'm starting this blog so I can speak a little about what moves me and why do I code. As of now, I have 10 years straight of development experience and probably its time for me to start writting down some things I learned through the years.
 

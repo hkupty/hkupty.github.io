@@ -3,6 +3,7 @@ title: "Understanding the Math behind FP: The Monads"
 date: 2016-04-10 15:53
 categories: [code]
 tags: [functional programming, python, scala]
+layout: single
 ---
 
 On my [previous post][previous] I talked a little about Functional Programming, hoping to introduce it to newcomers and developers with no previous FP experience.

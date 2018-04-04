@@ -3,6 +3,7 @@ title: "A Neovim Approach"
 date: 2016-03-14 20:25
 categories: [tools]
 tags: [neovim, tmux]
+layout: single
 ---
 
 Still on the topic of Neovim taking over tmux's place, and as a response to several interesting comments I've read on hackernews and reddit regarding [previous post][ditching-tmux], I'd like to show a new approach to what has been discussed.
