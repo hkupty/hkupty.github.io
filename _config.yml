@@ -70,3 +70,6 @@ exclude: ['Gemfile']
 
 remote_theme: "mmistakes/minimal-mistakes"
 minimal_mistakes_skin: "contrast"
+
+compress_html:
+  clippings: all
