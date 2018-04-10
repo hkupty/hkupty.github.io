@@ -68,7 +68,7 @@ kramdown:
 
 exclude: ['Gemfile']
 
-remote_theme: "mmistakes/minimal-mistakes"
+remote_theme: "sylthare/type-on-strap"
 minimal_mistakes_skin: "contrast"
 
 compress_html:
