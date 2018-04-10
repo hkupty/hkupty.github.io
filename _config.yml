@@ -43,7 +43,6 @@ defaults:
       path: ""
       type: posts
     values:
-      layout: single
       author_profile: true
       read_time: true
       comments: false
@@ -68,8 +67,7 @@ kramdown:
 
 exclude: ['Gemfile']
 
-remote_theme: daviddarnes/alembic
-blog_theme: "dark"
+remote_theme: Sylhare/Type-on-Strap
 
 compress_html:
   clippings: all
