@@ -1,15 +1,18 @@
 # Site settings
-title: 'A monomorphic mapping of Ideas → Text'
 name: 'Henry Kupty'
-description: 'Whatever comes to mind transformed into text, whenever I can write.'
 url: 'https://hkupty.github.io'
 baseurl: '/'
 repository: 'hkupty/hkupty.github.io'
 # disqus_shortname: 'your-disqus-name'
 
-analytics:
-  google:
-    tracking_id: 'UA-74370609-1'
+theme_settings:
+  title: 'A monomorphic mapping of Ideas → Text'
+  avatar: 'assets/images/me.jpg'
+  description: 'Whatever comes to mind transformed into text, whenever I can write.'
+  header_text_feature_image: assets/img/header.jpg
+  footer_text: Copyright 2017
+  google_analytics: 'UA-74370609-1'
+  katex: true
 
 category_archive:
   type: liquid
@@ -20,7 +23,6 @@ tag_archive:
 
 author:
   name: 'hkupty'
-  avatar: 'assets/images/me.jpg'
   email: hkupty@gmail.com
   bio: 'Self-taught engineer'
   linkedin: hkupty
