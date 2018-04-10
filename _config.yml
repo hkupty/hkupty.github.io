@@ -7,10 +7,10 @@ repository: 'hkupty/hkupty.github.io'
 # disqus_shortname: 'your-disqus-name'
 
 theme_settings:
+  author: 'Henry John Kupty'
   title: 'A monomorphic mapping of Ideas → Text'
   avatar: 'assets/images/me.jpg'
   description: 'Whatever comes to mind transformed into text, whenever I can write.'
-  header_text: "...."
   header_text_feature_image: assets/images/heading.jpg
   footer_text: Copyright 2017
   google_analytics: 'UA-74370609-1'
@@ -28,13 +28,6 @@ theme_settings:
   twitter: ingvijk
   reddit: ingvij
   #  steam: hkupty
-
-category_archive:
-  type: liquid
-  path: /categories/
-tag_archive:
-  type: liquid
-  path: /tags/
 
 author:
   name: 'hkupty'
