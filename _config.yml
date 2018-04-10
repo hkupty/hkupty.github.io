@@ -11,7 +11,7 @@ theme_settings:
   title: 'Thoughts on code'
   avatar: 'assets/images/me.jpg'
   description: 'Whatever comes to mind transformed into text, whenever I can write.'
-  header_text: "Software Engineering et al"
+  header_text: "<br /><br /> Software Engineering et al<br /><br />"
   header_text_feature_image: assets/images/rooftops.jpg
   footer_text: Copyright 2017
   google_analytics: 'UA-74370609-1'
