@@ -68,8 +68,8 @@ kramdown:
 
 exclude: ['Gemfile']
 
-remote_theme: "sylthare/type-on-strap"
-minimal_mistakes_skin: "contrast"
+remote_theme: "nielsenramon/chalk"
+blog_theme: "dark"
 
 compress_html:
   clippings: all
