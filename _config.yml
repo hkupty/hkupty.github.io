@@ -8,7 +8,7 @@ repository: 'hkupty/hkupty.github.io'
 
 theme_settings:
   author: 'Henry John Kupty'
-  title: 'A monomorphic mapping of Ideas → Text'
+  title: 'Thoughts on code'
   avatar: 'assets/images/me.jpg'
   description: 'Whatever comes to mind transformed into text, whenever I can write.'
   header_text_feature_image: assets/images/heading.jpg
