@@ -17,6 +17,14 @@ theme_settings:
   email_address: hkupty@gmail.com
   linkedin: https://www.linkedin.com/in/hkupty
   portfolio: false
+  github: "hkupty"
+  bitbucket: hkupty
+  github: hkupty
+  gitlab: ingvij
+  # stackoverflow: ingvij
+  twitter: ingvijk
+  reddit: ingvij
+  #  steam: hkupty
 
 category_archive:
   type: liquid
@@ -30,11 +38,6 @@ author:
   email: hkupty@gmail.com
   bio: 'Self-taught engineer'
   linkedin: hkupty
-  bitbucket: hkupty
-  github: hkupty
-  gitlab: ingvij
-  stackoverflow: ingvij
-  twitter: ingvijk
 
 read_time: true
 
