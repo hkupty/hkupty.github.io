@@ -68,7 +68,7 @@ kramdown:
 
 exclude: ['Gemfile']
 
-remote_theme: "nielsenramon/chalk"
+remote_theme: daviddarnes/alembic
 blog_theme: "dark"
 
 compress_html:
