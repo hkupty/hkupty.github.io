@@ -13,6 +13,10 @@ theme_settings:
   footer_text: Copyright 2017
   google_analytics: 'UA-74370609-1'
   katex: true
+  rss: true
+  email_address: hkupty@gmail.com
+  linkedin: https://www.linkedin.com/in/hkupty
+  portfolio: false
 
 category_archive:
   type: liquid
