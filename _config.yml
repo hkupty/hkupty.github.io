@@ -1,4 +1,5 @@
 # Site settings
+title: 'Thoughts on code'
 name: 'Henry Kupty'
 url: 'https://hkupty.github.io'
 baseurl: '/'
@@ -14,9 +15,10 @@ theme_settings:
   google_analytics: 'UA-74370609-1'
   katex: true
   rss: true
+  portfolio: false
+  tags: true
   email_address: hkupty@gmail.com
   linkedin: https://www.linkedin.com/in/hkupty
-  portfolio: false
   github: "hkupty"
   bitbucket: hkupty
   github: hkupty
@@ -41,12 +43,6 @@ author:
 
 read_time: true
 
-social:
-  links:
-    - "https://twitter.com/ingvijk"
-    - "https://www.linkedin.com/in/hkupty"
-    - "https://github.com/hkupty"
-
 defaults:
   - scope:
       path: ""
@@ -58,25 +54,16 @@ defaults:
       share: true
       related: true
 
-# Build settings
 destination: _site
 paginate: 10
 paginate_path: /recent/page:num/
 permalink: /:year/:title/
-markdown: kramdown
 highlighter: rouge
-breadcrumbs: true
-read_time: true
 
 kramdown:
-  # use Github Flavored Markdown
   input: GFM
-  # do not replace newlines by <br>s
   hard_wrap: false
 
 exclude: ['Gemfile']
-
+plugins: [jekyll-paginate, jekyll-seo-tag]
 remote_theme: Sylhare/Type-on-Strap
-
-compress_html:
-  clippings: all
