@@ -1,0 +1,63 @@
+#+TITLE: How to write tests
+#+LAYOUT: posts
+
+Also known as 'How not to be a jerk when writing software that will be maintained by you and your teammates'.
+
+This is a selection of tips that I wrote after being frustrated by tests that did not work as they should.
+
+ ---
+
+* Make sure they fix something
+Adding tests does not ensure your code won't break or won't have bugs.
+Instead, it ensures that your code won't regress and bug won't reappear on the same places.
+With that in mind, follow this simple recipe:
+  - Find a bug;
+  - Write a test proves that your bug is indeed a bug;
+  - Hack your codebase until all tests pass.
+
+What have you ensured with that simple, 3-step rule? Your nasty bug won't
+appear there anymore. Hopefully, that was the only place it could appear (you
+didn't copy/paste code all around your codebase, did you?).
+
+* Make sure they are small and self-contained
+Testing should be simple.
+Don't make it hard for your fellow coworkers to write tests.
+Either test isolated slices of the code base (aka. Unit Tests) or a complete transaction (Black Box/Integration tests).
+Testing small features of the project through integration tests makes it difficult to reason about failures.
+Also, it would be great if you could follow a convention where:
+  - test/ns/testfile << this is your unit test file;
+  - integration/ns/testfile << this is your integration test file.
+
+So you don't need to think too much whether you are working on unit or
+integration tests. Humans are lazy, they make mistakes and are not to be
+trusted. Simple rules and rule enforcement makes existence less painful.
+
+* Don't leave logging on for tests
+Logs are nice and they help you to debug failures.
+Keeping them on during tests will make the test suite output difficult to understand.
+Test suites should allow us to quickly understand what failed.
+Cutting through logs like Indiana Jones with a machete won't make fixing tests any more exciting.
+
+* Make sure tests run locally
+Testing locally is essential so changes are easy to be approved.
+If one must rely on the CI to check when a test fails or passes, the cycle takes too long to be productive.
+Make sure a simple test command is enough.
+If it requires setup, make sure proper scripts are present and some explanation exists.
+
+Also, if you remember that I said something about integration tests, you
+might argue that your black box test should set up the application server,
+the database and a set of kafka consumers and producers so your test is fully
+isolated.
+
+Don't do that. Leave that to your CI/CD. Set up a test environment. A staging
+environment. Whatever name you want for the environment that thests your
+service as a whole.
+
+Your local integration tests should be a single PID and nothing else.
+
+ ---
+
+Sorry for the rant, but I can't blame ghosts, so I write this on the stone
+for future generations.
+
+:x
