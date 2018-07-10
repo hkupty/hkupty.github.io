@@ -60,5 +60,5 @@ kramdown:
   hard_wrap: false
 
 exclude: ['Gemfile']
-plugins: [jekyll-paginate, jekyll-seo-tag, jekyll-org]
+plugins: [jekyll-org, jekyll-paginate, jekyll-seo-tag]
 remote_theme: Sylhare/Type-on-Strap

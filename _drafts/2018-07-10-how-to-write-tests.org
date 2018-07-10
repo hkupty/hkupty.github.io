@@ -5,8 +5,6 @@ Also known as 'How not to be a jerk when writing software that will be maintaine
 
 This is a selection of tips that I wrote after being frustrated by tests that did not work as they should.
 
- ---
-
 * Make sure they fix something
 Adding tests does not ensure your code won't break or won't have bugs.
 Instead, it ensures that your code won't regress and bug won't reappear on the same places.
@@ -54,8 +52,6 @@ environment. Whatever name you want for the environment that thests your
 service as a whole.
 
 Your local integration tests should be a single PID and nothing else.
-
- ---
 
 Sorry for the rant, but I can't blame ghosts, so I write this on the stone
 for future generations.
