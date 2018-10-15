@@ -62,3 +62,4 @@ kramdown:
 exclude: ['Gemfile']
 plugins: [jekyll-paginate, jekyll-seo-tag, jekyll-include-cache]
 remote_theme: "mmistakes/minimal-mistakes"
+minimal_mistakes_skin: "dark"
