@@ -1,7 +1,7 @@
 # Site settings
 title: 'Thoughts on code'
-title_separator: "|"
-  name: 'Henry Kupty'
+title_separator: '|'
+name: 'Henry Kupty'
 url: 'https://hkupty.github.io'
 baseurl: '/'
 repository: 'hkupty/hkupty.github.io'
