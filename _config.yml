@@ -61,4 +61,4 @@ kramdown:
 
 exclude: ['Gemfile']
 plugins: [jekyll-paginate, jekyll-seo-tag]
-remote_theme: hkupty/sleek
+remote_theme: jekyller/jasper2
