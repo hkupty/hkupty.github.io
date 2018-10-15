@@ -61,4 +61,4 @@ kramdown:
 
 exclude: ['Gemfile']
 plugins: [jekyll-paginate, jekyll-seo-tag]
-remote_theme: nandomoreirame/zetsu
+remote_theme: "mmistakes/minimal-mistakes"
