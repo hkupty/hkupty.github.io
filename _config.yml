@@ -1,65 +1,58 @@
 # Site settings
 title: 'Thoughts on code'
-name: 'Henry Kupty'
+title_separator: "|"
+  name: 'Henry Kupty'
 url: 'https://hkupty.github.io'
 baseurl: '/'
 repository: 'hkupty/hkupty.github.io'
-# disqus_shortname: 'your-disqus-name'
 
-theme_settings:
-  author: 'Henry John Kupty'
-  title: 'Thoughts on code'
-  avatar: 'assets/images/me.jpg'
+site:
   description: 'Whatever comes to mind transformed into text, whenever I can write.'
-  header_text: "<br /><br /> Software Engineering et al<br /><br />"
-  header_text_feature_image: assets/images/rooftops.jpg
-  footer_text: Copyright 2017
-  google_analytics: 'UA-74370609-1'
-  katex: true
-  rss: true
-  portfolio: false
   tags: true
-  email_address: hkupty@gmail.com
-  linkedin: https://www.linkedin.com/in/hkupty
-  github: "hkupty"
-  bitbucket: hkupty
-  github: hkupty
-  gitlab: ingvij
-  # stackoverflow: ingvij
-  twitter: ingvijk
-  reddit: ingvij
-  #  steam: hkupty
+
+analytics:
+  provider: "google-gtag"
+  google:
+    tracking_id: 'UA-74370609-1'
+
+twitter:
+  username: ingvijk
 
 author:
   name: 'hkupty'
-  email: hkupty@gmail.com
   bio: 'Self-taught engineer'
-  linkedin: hkupty
-
-read_time: true
-
-defaults:
-  - scope:
-      path: ""
-      type: posts
-    values:
-      author_profile: true
-      read_time: true
-      comments: false
-      share: true
-      related: true
+  location: "Stockholm, Sweden"
+  links:
+    - label: @ingvijk
+      icon: "fab fa-fw fa-twitter-square"
+      url: "https://twitter.com/ingvijk"
+    - label: hkupty
+      icon: "fab fa-fw fa-github"
+      url: "https://github.com/hkupty"
+    - label: ingvij
+      icon: "fab fa-fw fa-gitlab"
+      url: "https://gitlab.com/ingvij"
+    - label: hkupty
+      icon: "fab fa-fw fa-linkedin"
+      url: "https://www.linkedin.com/in/hkupty/"
 
 destination: _site
 paginate: 10
 paginate_path: /recent/page:num/
 permalink: /:year/:title/
-highlighter: rouge
+breadcrumbs: true
 
 kramdown:
   input: GFM
   hard_wrap: false
 
 exclude: ['Gemfile']
-plugins: [jekyll-paginate, jekyll-seo-tag, jekyll-include-cache]
+plugins: 
+  - jekyll-paginate
+  - jekyll-seo-tag
+  - jekyll-sitemap
+  - jekyll-gist
+  - jemoji
+  - jekyll-include-cache
 remote_theme: "mmistakes/minimal-mistakes"
 minimal_mistakes_skin: "dark"
