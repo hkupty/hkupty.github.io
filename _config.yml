@@ -61,5 +61,4 @@ kramdown:
 
 exclude: ['Gemfile']
 plugins: [jekyll-paginate, jekyll-seo-tag]
-theme: jekyll-sleek
 remote_theme: janczizikow/sleek
