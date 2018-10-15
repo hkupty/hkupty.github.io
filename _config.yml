@@ -60,5 +60,5 @@ kramdown:
   hard_wrap: false
 
 exclude: ['Gemfile']
-plugins: [jekyll-paginate, jekyll-seo-tag]
+plugins: [jekyll-paginate, jekyll-seo-tag, jekyll-include-cache]
 remote_theme: "mmistakes/minimal-mistakes"
