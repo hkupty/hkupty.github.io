@@ -23,16 +23,16 @@ author:
   bio: 'Self-taught engineer'
   location: "Stockholm, Sweden"
   links:
-    - label: @ingvijk
+    - label: '@ingvijk'
       icon: "fab fa-fw fa-twitter-square"
       url: "https://twitter.com/ingvijk"
-    - label: hkupty
+    - label: 'hkupty'
       icon: "fab fa-fw fa-github"
       url: "https://github.com/hkupty"
-    - label: ingvij
+    - label: 'ingvij'
       icon: "fab fa-fw fa-gitlab"
       url: "https://gitlab.com/ingvij"
-    - label: hkupty
+    - label: 'hkupty'
       icon: "fab fa-fw fa-linkedin"
       url: "https://www.linkedin.com/in/hkupty/"
 
