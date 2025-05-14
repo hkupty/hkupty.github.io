@@ -125,7 +125,7 @@ You see, there's a _ton_ of value in open source, a net of exponentially synergi
 Those are, or should be, the wonders of our times, but we're so short-sighted and narrow-focused playing with our LLMs that we're unable to contemplate the colossal magnitude of what software engineering has brought us, and we're content with code-spewing mathematical models producing
 subpar systems and apps. We let that happen. We devalued our craft.
 
-I don't know where I'm going with this and I sure hoped I would come up with an uplifting comment to counter balance this apocalyptic cloud of negative bitterness I logorrheically jotted down this unnecessarily prolix excerpt.
+I don't know where I'm going with this and I sure hoped I would come up with an uplifting comment to counter balance this apocalyptic cloud of negative bitterness I logorrheically jotted down in this unnecessarily prolix excerpt.
 But I couldn't, because perhaps I find myself in a very similar apocalyptic storm and this is me rationalizing the demons that surround me through the lens of my analytical skills. One my say I'm subconsciously trying to put everyone in the same chaotic grounds that I'm currently in to feel better, but I chose to believe
 I'm actually just an old man complaining at the things that went wrong in my life, disguised as constructive (but perhaps not polite, as old people comments turn out to be) criticism.
 
