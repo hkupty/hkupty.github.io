@@ -126,7 +126,7 @@ Those are, or should be, the wonders of our times, but we're so short-sighted an
 subpar systems and apps. We let that happen. We devalued our craft.
 
 I don't know where I'm going with this and I sure hoped I would come up with an uplifting comment to counter balance this apocalyptic cloud of negative bitterness I logorrheically jotted down in this unnecessarily prolix excerpt.
-But I couldn't, because perhaps I find myself in a very similar apocalyptic storm and this is me rationalizing the demons that surround me through the lens of my analytical skills. One my say I'm subconsciously trying to put everyone in the same chaotic grounds that I'm currently in to feel better, but I chose to believe
+But I couldn't, because perhaps I find myself in a very similar apocalyptic storm and this is me rationalizing the demons that surround me through the lens of my analytical skills. One may say I'm subconsciously trying to put everyone in the same chaotic grounds that I'm currently in to feel better, but I chose to believe
 I'm actually just an old man complaining at the things that went wrong in my life, disguised as constructive (but perhaps not polite, as old people comments turn out to be) criticism.
 
 It is, undeniably, a conversation between my current self and my past self, where I point out the things I'm smart enough to realize now but wasn't back then, and how they impacted me.
