@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Scala on Thoughts on Code</title>
+    <link>http://localhost:1313/tags/scala/</link>
+    <description>Recent content in Scala on Thoughts on Code</description>
+    <generator>Hugo -- 0.147.2</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sun, 10 Apr 2016 15:53:00 +0000</lastBuildDate>
+    <atom:link href="http://localhost:1313/tags/scala/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Understanding the Math behind FP: The Monads</title>
+      <link>http://localhost:1313/2016/Understanding-the-Math-behind-FP-The-Monads/</link>
+      <pubDate>Sun, 10 Apr 2016 15:53:00 +0000</pubDate>
+      <guid>http://localhost:1313/2016/Understanding-the-Math-behind-FP-The-Monads/</guid>
+      <description>&lt;p&gt;On my &lt;a href=&#34;http://hkupty.github.io/2016/Functional-Programming-Concepts-Idioms-and-Philosophy/&#34;&gt;previous post&lt;/a&gt; I talked a little about Functional Programming, hoping to introduce it to newcomers and developers with no previous FP experience.&lt;/p&gt;
+&lt;p&gt;Several people said it was not very precise and it didn&amp;rsquo;t explained some concepts (such as Monads or Functors) with the required level of details.
+Well, I do hope to achieve some detailing with this post. Nonetheless, I&amp;rsquo;ll still try to keep it light to those who never programmed functionally before.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Functional Programming: Concepts, Idioms and Philosophy</title>
+      <link>http://localhost:1313/2016/Functional-Programming-Concepts-Idioms-and-Philosophy/</link>
+      <pubDate>Sat, 19 Mar 2016 10:06:00 +0000</pubDate>
+      <guid>http://localhost:1313/2016/Functional-Programming-Concepts-Idioms-and-Philosophy/</guid>
+      <description>&lt;p&gt;&lt;a href=&#34;https://en.wikipedia.org/wiki/Functional_programming&#34;&gt;Functional Programming&lt;/a&gt; has risen as a solution to most modern days problems, such as concurrency and scaling. For some, it is a mystique concept that applies only to Erlang, Haskell and other strange languages that are either too complicated or irrelevant. This is simply not true, and I&amp;rsquo;m going to show how to apply some functional programming concepts on non-functional languages.&lt;/p&gt;
+&lt;p&gt;I&amp;rsquo;ll deconstruct the functional paradigm by first defining what &amp;lsquo;Functional Programming&amp;rsquo; really means, then explaining common idioms and comparing the syntax.
+In the end, I&amp;rsquo;ll show how to make relevant changes to non-functional in order to follow the Functional Programming Philosophy.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>
