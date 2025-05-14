@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en" dir="auto">
+
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script><meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="robots" content="noindex, nofollow">
+<title>Ditching tmux | Thoughts on Code</title>
+<meta name="keywords" content="neovim, tmux">
+<meta name="description" content="This week I started an experiment. I wanted to know whether I would be able to completely ditch tmux.
+Don&rsquo;t get me wrong here, I absolutely love how tmux makes terminal multiplexing transparent for me. I&rsquo;m also very used to &lt;C-b&gt;c, &lt;C-b&gt;1-0 and so on. I also have a custom set of keymaps and plugins I use frequently, such as tmux-copycat, which helps me find paths or urls on the terminal.
+With that said, I found that my workflow was not optimal, a certain day, where I was constantly switching tabs on neovim and panes on tmux. This was unlikely the best scenario and I challenged me to overcome this by runnig neovim as my terminal multiplexer.">
+<meta name="author" content="">
+<link rel="canonical" href="http://localhost:1313/2016/Ditching-tmux/">
+<link crossorigin="anonymous" href="/assets/css/stylesheet.f49d66caae9ea0fd43f21f29e71a8d3e284517ed770f2aa86fa012953ad3c9ef.css" integrity="sha256-9J1myq6eoP1D8h8p5xqNPihFF&#43;13Dyqob6ASlTrTye8=" rel="preload stylesheet" as="style">
+<link rel="icon" href="http://localhost:1313/favicon.ico">
+<link rel="icon" type="image/png" sizes="16x16" href="http://localhost:1313/favicon-16x16.png">
+<link rel="icon" type="image/png" sizes="32x32" href="http://localhost:1313/favicon-32x32.png">
+<link rel="apple-touch-icon" href="http://localhost:1313/apple-touch-icon.png">
+<link rel="mask-icon" href="http://localhost:1313/safari-pinned-tab.svg">
+<meta name="theme-color" content="#2e2e33">
+<meta name="msapplication-TileColor" content="#2e2e33">
+<link rel="alternate" hreflang="en" href="http://localhost:1313/2016/Ditching-tmux/">
+<noscript>
+    <style>
+        #theme-toggle,
+        .top-link {
+            display: none;
+        }
+
+    </style>
+    <style>
+        @media (prefers-color-scheme: dark) {
+            :root {
+                --theme: rgb(29, 30, 32);
+                --entry: rgb(46, 46, 51);
+                --primary: rgb(218, 218, 219);
+                --secondary: rgb(155, 156, 157);
+                --tertiary: rgb(65, 66, 68);
+                --content: rgb(196, 196, 197);
+                --code-block-bg: rgb(46, 46, 51);
+                --code-bg: rgb(55, 56, 62);
+                --border: rgb(51, 51, 51);
+            }
+
+            .list {
+                background: var(--theme);
+            }
+
+            .list:not(.dark)::-webkit-scrollbar-track {
+                background: 0 0;
+            }
+
+            .list:not(.dark)::-webkit-scrollbar-thumb {
+                border-color: var(--theme);
+            }
+        }
+
+    </style>
+</noscript>
+</head>
+
+<body class="" id="top">
+<script>
+    if (localStorage.getItem("pref-theme") === "dark") {
+        document.body.classList.add('dark');
+    } else if (localStorage.getItem("pref-theme") === "light") {
+        document.body.classList.remove('dark')
+    } else if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+        document.body.classList.add('dark');
+    }
+
+</script>
+
+<header class="header">
+    <nav class="nav">
+        <div class="logo">
+            <a href="http://localhost:1313/" accesskey="h" title="Thoughts on Code (Alt + H)">Thoughts on Code</a>
+            <div class="logo-switches">
+                <button id="theme-toggle" accesskey="t" title="(Alt + T)" aria-label="Toggle theme">
+                    <svg id="moon" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                    </svg>
+                    <svg id="sun" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <circle cx="12" cy="12" r="5"></circle>
+                        <line x1="12" y1="1" x2="12" y2="3"></line>
+                        <line x1="12" y1="21" x2="12" y2="23"></line>
+                        <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                        <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                        <line x1="1" y1="12" x2="3" y2="12"></line>
+                        <line x1="21" y1="12" x2="23" y2="12"></line>
+                        <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                        <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+                    </svg>
+                </button>
+            </div>
+        </div>
+        <ul id="menu">
+        </ul>
+    </nav>
+</header>
+<main class="main">
+
+<article class="post-single">
+  <header class="post-header">
+    
+    <h1 class="post-title entry-hint-parent">
+      Ditching tmux
+    </h1>
+    <div class="post-meta"><span title='2016-03-13 10:55:00 +0000 UTC'>March 13, 2016</span>
+
+</div>
+  </header> 
+  <div class="post-content"><p>This week I started an experiment. I wanted to know whether I would be able to completely ditch tmux.</p>
+<p>Don&rsquo;t get me wrong here, I absolutely love how tmux makes terminal multiplexing transparent for me. I&rsquo;m also very used to <code>&lt;C-b&gt;c</code>, <code>&lt;C-b&gt;1-0</code> and so on. I also have a custom set of <a href="https://github.com/hkupty/dotfiles/blob/master/tmux/.tmux.conf">keymaps and plugins</a> I use frequently, such as <a href="https://github.com/tmux-plugins/tmux-copycat">tmux-copycat</a>, which helps me find paths or urls on the terminal.</p>
+<p>With that said, I found that my workflow was not optimal, a certain day, where I was constantly switching tabs on neovim and panes on tmux. This was unlikely the best scenario and I challenged me to overcome this by runnig neovim <em>as my terminal multiplexer</em>.</p>
+<p>In case you don&rsquo;t know <a href="https://github.com/neovim/neovim">neovim</a> yet, it is an awesome fork of vim with several enhancements, such as built-in terminal emulator and asynchronous jobs.</p>
+<h2 id="defeating-muscle-memory">Defeating Muscle Memory<a hidden class="anchor" aria-hidden="true" href="#defeating-muscle-memory">#</a></h2>
+<p>Well, some times you get way too much used to some keymaps. This is the case. I use <code>&lt;C-b&gt;</code> for everything. Even on plain terminal, I use <code>&lt;C-b&gt;&lt;C-l&gt;</code> (custom bind) for clearing the screen.</p>
+<p>So my first step to remove tmux out of my way was to bind several of the keybinds I&rsquo;m used to in neovim. And I came up with <a href="https://github.com/hkupty/nvimux">nvimux</a>. This is just a fancy name for &rsquo;tmux bindings on neovim&rsquo;. It is very simple and has almost no fancy stuff, such as configurable keybinds, conditional mappings and so on. It just enables tmux bindings if tmux is off. Feel free to use if you get interested.</p>
+<h2 id="overcoming-the-limitations">Overcoming the limitations<a hidden class="anchor" aria-hidden="true" href="#overcoming-the-limitations">#</a></h2>
+<p>Now that I can <code>&lt;C-b&gt;c</code> instead of <code>:tabe</code> and <code>&lt;C-b&gt;1</code> instead of <code>1gt</code> (which I normally use, but I used to navigate tmux&rsquo;s panes way more often), its time to handle the limitations.</p>
+<p>The first thing is editing files from the shell. While on tmux, I normally typed <code>vim path/to/some/file</code> to edit it. This was fine inside tmux but from within neovim&rsquo;s terminal, this would cause a nested vim session, which is not what I wanted.</p>
+<p>So I found an excellent tool called <a href="https://github.com/mhinz/neovim-remote">neovim-remote</a>. It is fantastic. I have written a small wrapper around it on my <code>.zshrc</code>, but just for faster typing:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#66d9ef">if</span> <span style="color:#f92672">[</span> -n <span style="color:#e6db74">&#34;</span><span style="color:#e6db74">${</span>NVIM_LISTEN_ADDRESS+x<span style="color:#e6db74">}</span><span style="color:#e6db74">&#34;</span> <span style="color:#f92672">]</span>; <span style="color:#66d9ef">then</span>
+</span></span><span style="display:flex;"><span>  alias h<span style="color:#f92672">=</span><span style="color:#e6db74">&#39;nvr -o&#39;</span>
+</span></span><span style="display:flex;"><span>  alias v<span style="color:#f92672">=</span><span style="color:#e6db74">&#39;nvr -O&#39;</span>
+</span></span><span style="display:flex;"><span>  alias t<span style="color:#f92672">=</span><span style="color:#e6db74">&#39;nvr --remote-tab&#39;</span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">fi</span>
+</span></span></code></pre></div><p>Now, from inside neovim I can type <code>t path/to/some/file</code> to open it on another tab or replace <code>t</code> with <code>h</code> to open horizontally (or <code>v</code> for vertically) on the same tab I&rsquo;m now.</p>
+<p>Another plugin that helped me deeply was <a href="https://github.com/kassio/neoterm">neoterm</a>. I mapped <code>&lt;C-b&gt;q</code> to be my quick terminal and I can open the same instance on every screen. It just wraps neovim terminal in an easy and reusable way.</p>
+<h2 id="todo">//TODO<a hidden class="anchor" aria-hidden="true" href="#todo">#</a></h2>
+<p>I&rsquo;m still adjusting all the stuff, so there are several things I miss or need to improve my usage.</p>
+<ul>
+<li>Tab-local pwd. As of writing this arcticle, the feature is still <a href="https://github.com/neovim/neovim/pull/3229">a pending PR on neovim</a>.</li>
+<li>Toggling a specific terminal instance on neoterm. Neoterm only toggles the last instance, which makes it weird if I have two term instances open.</li>
+<li>Better buffer management for nvimux. I wish I could open a terminal and jump right into it, but instead I have to <code>&lt;C-w&gt;l&lt;CR&gt;</code> every time to navigate and enter on terminal mode.</li>
+</ul>
+<p>Other than that, I has been a quite interesting week and I feel I&rsquo;m making a better usage of other tools such as <code>vim-fugitive</code> instead of <code>git</code> directly on command line. As for productivity I think it is still too early to say.</p>
+<p><strong>Edit:</strong> As this post has made some discussion happen on <a href="https://news.ycombinator.com/item?id=11283955">hackernews</a>, I&rsquo;ve added some more information about it on <a href="http://hkupty.github.io/2016/A-Neovim-Approach/">this post</a></p>
+<p>:x</p>
+
+
+  </div>
+
+  <footer class="post-footer">
+    <ul class="post-tags">
+      <li><a href="http://localhost:1313/tags/neovim/">Neovim</a></li>
+      <li><a href="http://localhost:1313/tags/tmux/">Tmux</a></li>
+    </ul>
+  </footer>
+</article>
+    </main>
+    
+<footer class="footer">
+        <span>&copy; 2025 <a href="http://localhost:1313/">Thoughts on Code</a></span> · 
+
+    <span>
+        Powered by
+        <a href="https://gohugo.io/" rel="noopener noreferrer" target="_blank">Hugo</a> &
+        <a href="https://github.com/adityatelange/hugo-PaperMod/" rel="noopener" target="_blank">PaperMod</a>
+    </span>
+</footer>
+<a href="#top" aria-label="go to top" title="Go to Top (Alt + G)" class="top-link" id="top-link" accesskey="g">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 6" fill="currentColor">
+        <path d="M12 6H0l6-6z" />
+    </svg>
+</a>
+
+<script>
+    let menu = document.getElementById('menu')
+    if (menu) {
+        menu.scrollLeft = localStorage.getItem("menu-scroll-position");
+        menu.onscroll = function () {
+            localStorage.setItem("menu-scroll-position", menu.scrollLeft);
+        }
+    }
+
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener("click", function (e) {
+            e.preventDefault();
+            var id = this.getAttribute("href").substr(1);
+            if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView({
+                    behavior: "smooth"
+                });
+            } else {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView();
+            }
+            if (id === "top") {
+                history.replaceState(null, null, " ");
+            } else {
+                history.pushState(null, null, `#${id}`);
+            }
+        });
+    });
+
+</script>
+<script>
+    var mybutton = document.getElementById("top-link");
+    window.onscroll = function () {
+        if (document.body.scrollTop > 800 || document.documentElement.scrollTop > 800) {
+            mybutton.style.visibility = "visible";
+            mybutton.style.opacity = "1";
+        } else {
+            mybutton.style.visibility = "hidden";
+            mybutton.style.opacity = "0";
+        }
+    };
+
+</script>
+<script>
+    document.getElementById("theme-toggle").addEventListener("click", () => {
+        if (document.body.className.includes("dark")) {
+            document.body.classList.remove('dark');
+            localStorage.setItem("pref-theme", 'light');
+        } else {
+            document.body.classList.add('dark');
+            localStorage.setItem("pref-theme", 'dark');
+        }
+    })
+
+</script>
+</body>
+
+</html>

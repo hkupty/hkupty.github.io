@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Blog on Thoughts on Code</title>
+    <link>http://localhost:1313/tags/blog/</link>
+    <description>Recent content in Blog on Thoughts on Code</description>
+    <generator>Hugo -- 0.147.2</generator>
+    <language>en-us</language>
+    <lastBuildDate>Tue, 13 May 2025 17:46:35 +0200</lastBuildDate>
+    <atom:link href="http://localhost:1313/tags/blog/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>I&#39;m back: The return of the grumpy</title>
+      <link>http://localhost:1313/2025/Im-back-The-return-of-the-grumpy/</link>
+      <pubDate>Tue, 13 May 2025 17:46:35 +0200</pubDate>
+      <guid>http://localhost:1313/2025/Im-back-The-return-of-the-grumpy/</guid>
+      <description>&lt;p&gt;Long time no see.&lt;/p&gt;
+&lt;p&gt;Here, have a seat, and let me ramble about a bunch of things in this long and nonsensical rant. I hope this will be as interesting to you, the reader, as it is to me, the tired programmer in need of venting out.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Initial Commit</title>
+      <link>http://localhost:1313/2016/Initial-Commit/</link>
+      <pubDate>Sat, 05 Mar 2016 09:50:00 +0000</pubDate>
+      <guid>http://localhost:1313/2016/Initial-Commit/</guid>
+      <description>&lt;p&gt;Hi all, I&amp;rsquo;m starting this blog so I can speak a little about what moves me and why do I code. As of now, I have 10 years straight of development experience and probably its time for me to start writting down some things I learned through the years.&lt;/p&gt;
+&lt;p&gt;I can imagine I&amp;rsquo;ll spend a fair amount of time quoting books here. Also, I plan to write a bit about open source projects I use and my view on them. Lastly, I&amp;rsquo;ll surely want to put some code here.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>
