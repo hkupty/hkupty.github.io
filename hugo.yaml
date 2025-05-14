@@ -11,3 +11,6 @@ buildExpired: false
 disablePathToLower: true
 permalinks:
   posts: /:year/:slug
+caches:
+  images:
+    dir: :cacheDir/images
