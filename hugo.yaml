@@ -19,3 +19,6 @@ params:
   analytics:
     google:
       SiteVerificationTag: G-8ZW1QG87FR
+services:
+  googleAnalytics:
+    id: G-8ZW1QG87FR
