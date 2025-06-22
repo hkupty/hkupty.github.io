@@ -54,7 +54,7 @@ The word of caution here though is that I'm yet to witness one such Information 
 Also, minor instances of those beneficial properties exist in things like [ADRs](https://adr.github.io/) or well-written git histories so it is not like we live in complete chaos - my writing would sound more alarming without this section but I'm bound by my personal values to be fair and truthful,
 which would make me a broke journalist, but I can still sleep an night.
 
-So, no, we're not doomed. We know how to do it, we know it is valuable. But the demand for velocity and for a high release throughput puts us in a situation where this becomes second nature, whereas I believe this should be the core of our craft.
+So, no, we're not doomed. We know how to do it, we know it is valuable. But the demand for velocity and for high release throughput puts us in a situation where this becomes second nature, whereas I believe this should be the core of our craft.
 
 ## So, is it time to start a counter-revolution?
 
