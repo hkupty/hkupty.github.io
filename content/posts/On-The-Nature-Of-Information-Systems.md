@@ -67,7 +67,7 @@ And even if the answer was that we needed to fight back "violently" against this
 
 It is not going to be the first time - nor the last - in history where we see the world turn to a suboptimal route because humankind picked the wrong option.
 
-History is the image that forms from in the patterns of the resonant noises from the crowd. When I chose to be dissonant, I'll hardly change that picture. Yet, there's a chance more people feel connected with this message.
+History is the image that forms from the patterns of the crowd's resonant noises. When I chose to be dissonant, I know I'll hardly change that picture. Yet, there's a chance more people feel connected with this message.
 
-There's also a chance that I revisit this, years in the past, and laugh at my own bitterness. Alea iacta est.
+There's also a chance that I revisit this, years in the future, and laugh at my own bitterness. Alea iacta est.
 :x
